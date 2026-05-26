@@ -1,0 +1,13 @@
+{
+  "name": "faceless",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Roblox extension that hides user faces on the Rolimon's deals page",
+  "scripts": {
+    "build": "tsc",
+    "check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Faceless",
+  "description": "A Roblox extension that hides user faces on the Rolimon's deals page.",
+  "version": "1.0",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "faceless",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "host_permissions": [
+    "https://rolimons.com/*",
+    "https://www.rolimons.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": 
+      [
+        "https://rolimons.com/deals*",
+        "https://www.rolimons.com/deals*"
+      ],
+      "js": 
+      [
+        "dist/content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
