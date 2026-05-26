@@ -1,23 +1,13 @@
-# faceless
+# Faceless
 
-simple chrome extension that hides face items from the rolimons deals page.
+A Roblox extension that hides user faces on the Rolimon's deals page.
 
-## development
+## Install
 
-the extension source is typescript in `src/`.
+1. Open `chrome://extensions`.
+2. Turn on developer mode.
+3. Click load unpacked.
+4. Pick the `Faceless` folder.
 
-```powershell
-npm install
-npm run build
-```
+Then open `https://rolimons.com/deals` & face deals are hidden!
 
-chrome loads `dist/content.js`.
-
-## install
-
-1. open `chrome://extensions`.
-2. turn on developer mode.
-3. click load unpacked.
-4. pick this folder: `faceless-extension`.
-
-then open `https://rolimons.com/deals`. face deals are hidden automatically.
